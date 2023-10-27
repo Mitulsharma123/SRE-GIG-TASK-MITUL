@@ -13,31 +13,31 @@ func main(){
 }
 
 func fun1(num int) {
-	if num > 50 {
-		fmt.Println("It's closer to 100")
-	} else if num < 50 {
-		fmt.Println("It's closer to 0")
-	} else {
-		fmt.Println("Generated number:", num)
-	}
+	fmt.Printf("Generated random number is: %d\n",num)
+		if num > 50 {
+			fmt.Println("It's closer to 100")
+		} 
+		if num < 50 {
+			fmt.Println("It's closer to 0")
+		} 	
 }
 
 func fun2(num int) {
-	if num == 50 {
-		fmt.Println("It's 50!")
-	} else if num < 50 {
-		fmt.Println("It's closer to 0")
-	}else {
-		fmt.Println("Generated number:", num)
+	fmt.Printf("Generated random number is: %d\n",num)
+		if num == 50 {
+			fmt.Println("It's 50!")
+		} 
+		if num < 50 {
+			fmt.Println("It's closer to 0", num)
 	}
 }
 
 func fun3(num int) {
-	if num > 50 && num%2 == 0{	// if remainder is zero, it is even number 
-		fmt.Println("It's closer to 100, and it's even!")
-	} else if num < 50 {
-		fmt.Println("It's closer to 0")
-	} else {
-		fmt.Println("Generated number:", num)
-	}
+	fmt.Printf("Generated random number is: %d\n",num)
+		if num > 50 && num%2 == 0{	// if remainder is zero, it is even number 
+			fmt.Println("It's closer to 100, and it's even!", num)
+		}  
+		if num < 50 {
+			fmt.Println("It's closer to 0", num)
+		}
 }
