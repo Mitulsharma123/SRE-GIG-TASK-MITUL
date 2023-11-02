@@ -1,15 +1,39 @@
-# task 3
+# Task 3: Create a Basic Web Server
 
-## create a basic web server ##
+## Steps to Run the Program
 
-# steps to run the program
+1. Run the following command in your terminal to start the web server:
 
-## $ go run main.go
-## curl http://localhost:8085/hello 
-- <h1 style = 'color:blue'> Hello Gophers !</h1>%
-## curl http://localhost:8085/movie 
-- {"name":"Mission Impossible Dead Reckoning","genre":"Action","director":"Christopher McQuarrie","rating":7.8}
+   ```bash
+   $ go run main.go
+   ```
 
-or visit any web browser and enter http://localhost:8085/hello in the url, same goes with http://localhost:8085/movie a webpage should be visible with desired output.
+2. To test the /hello endpoint, use the following command in your terminal:
+
+   ```bash
+   $ curl http://localhost:8085/hello
+   ```
+
+   ```bash
+   Output: <h1 style='color:blue'>Hello Gophers!</h1>
+   ```
+
+3. To test the /movie endpoint, use the following command in your terminal:
+
+    ```bash
+    $ curl http://localhost:8085/movie
+    ```
+
+    ```bash
+    Output: {"name":"Mission Impossible Dead Reckoning","genre":"Action","director":"Christopher McQuarrie","rating":7.8}
+    ```
+    
+Alternatively, you can visit any web browser and enter the following URLs:
+
+- http://localhost:8085/hello
+- http://localhost:8085/movie
+
+A webpage should be visible with the desired output.
+
 
 
