@@ -2,6 +2,8 @@ package todo
 
 import (
 	"fmt"
+	"strings"
+
 	"github.com/spf13/cobra"
 )
 
@@ -10,10 +12,11 @@ var addCmd = &cobra.Command{
 	Short: "add your task",
 
 	Run: func(cmd *cobra.Command, args []string) {
-	  fmt.Println("add called")
+	  task := strings.Join(args, " ")
+	  fmt.Printf("Added \"%s\" in your task list\n", task)
 	},
   }
   
-  func int(){
+  func init(){
 	RootCmd.AddCommand(addCmd)
   }
