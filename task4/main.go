@@ -1,7 +1,7 @@
 package main
 
 import (
-	"task4/todo"
+	"task4/task"
 )
 
 func main(){
