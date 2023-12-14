@@ -1,0 +1,19 @@
+domain: example.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: podwatcher-operator
+repo: example.com
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: example.com
+  group: watcher
+  kind: PodWatcher
+  path: example.com/api/v1
+  version: v1
+version: "3"
