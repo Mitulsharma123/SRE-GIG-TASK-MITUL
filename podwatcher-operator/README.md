@@ -1,8 +1,12 @@
 # podwatcher-operator
-// TODO(user): Add simple overview of use/purpose
+- Implement a simple operator 'podwatcher' using the operator-sdk - especially refer to the quickstart for follow along instructions:
 
 ## Description
-// TODO(user): An in-depth paragraph about your project and overview of use
+- It should be able to watch pods in all namespaces
+- It will print a message to the console when a pod gets started.
+- In a second step change it to only watch a single namespace. 
+- RBAC permissions can be very wide - but can be adjusted to the minimum needed as an extra exercise.
+- The logs could be printed every minute
 
 ## Getting Started
 You’ll need a Kubernetes cluster to run against. You can use [KIND](https://sigs.k8s.io/kind) to get a local cluster for testing, or run against a remote cluster.
