@@ -23,9 +23,12 @@ var addCmd = &cobra.Command{
 		
 		// create a text file to store the list of task
 		f, err := os.OpenFile("file.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
-		if err != nil {
-			fmt.Println("Not able to open this file")
-		}
+		//if err != nil {
+		//	fmt.Println("Not able to open this file")
+		//}
+    if err != nil {
+	    fmt.Fprintf(os.Stderr, "%v\n", err)
+    }
 
 		//close the file
 		defer f.Close()
