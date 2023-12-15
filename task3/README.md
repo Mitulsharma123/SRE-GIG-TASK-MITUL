@@ -36,4 +36,13 @@ Alternatively, you can visit any web browser and enter the following URLs:
 A webpage should be visible with the desired output.
 
 
+Incase of error message 
+```bash 
+listen tcp :8085: bind: address already in use
+exit status 1
+```
 
+Run this command on terminal
+```bash
+$ kill -9 $(lsof -ti:<port_number>)
+```
